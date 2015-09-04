@@ -1,6 +1,8 @@
 EMACS_VERSION=24.5
 APT_INSTALL_ARGS=-y --force-yes
 
+echo "Installing Emacs"
+
 # Essential building stuff
 sudo apt-get $APT_INSTALL_ARGS install build-essential
 sudo apt-get build-dep emacs$(shell echo $EMACS_VERSION | cut -d"." -f 1)

@@ -1,34 +1,30 @@
-# New ubuntu machine configuration:
-# This make file automate the installation of a machine where data analyis
-# would be performed.
-# Run while in root
+# New ubuntu machine configuration: This make file automate the installation of
+# a machine where data analysis would be performed. Run while in root
 
 UBUNTU_CODENAME=$(shell lsb_release -c | awk -F' ' '{print $$2}')
 TIMEZONE="Europe/Zurich"
 
-APT_INSTALL_ARGS=-y --force-yes
+ APT_INSTALL_ARGS=-y --force-yes
 
 # all
 all:
 	echo
 
 install-make:
-	sudo apt-get $(APT_INSTALL_ARGS) install make
+	sudo apt-get install make
 
 # R instalation
 r-cran:
-	printf "\ndeb http://stat.ethz.ch/CRAN/bin/linux/ubuntu $(UBUNTU_CODENAME)/" >> /etc/apt/sources.list
-	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
-	sudo apt-get update && sudo apt-get upgrade
-	sudo apt-get $(APT_INSTALL_ARGS) install r-base-core
-	sudo apt-get $(APT_INSTALL_ARGS) install r-cran-*
+	sudo bash r-cran/install.sh
 
 # python
 python:
 	echo "Hello World!"
 
 java:
-	sudo apt-get $(APT_INSTALL_ARGS) install openjdk-7-jre
+	sudo add-apt-repository ppa:webupd8team/java
+	sudo apt-get update
+	sudo apt-get $(APT_INSTALL_ARGS) install oracle-java8-installer
 # sudo apt-get -y install oracle-java8-installer
 
 # Leiningen
@@ -48,7 +44,7 @@ firewall:
 tz:
 	echo $TIMEZONE > etc/timezone
 	cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
-xo
+
 swap_file:
 	bash swap_file/install.sh
 

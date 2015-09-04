@@ -1,5 +1,7 @@
 # Install go
-sudo apt-get install golang git mercurial
+echo "Install google drive for linux"
+
+sudo apt-get -y --force-yes install golang git mercurial
 echo "export GOPATH=\$$HOME/gopath" >> ~/.bashrc
 echo "export PATH=\$$GOPATH:\$$GOPATH/bin:\$$PATH" >> ~/.bashrc
 sh ~/.bashrc

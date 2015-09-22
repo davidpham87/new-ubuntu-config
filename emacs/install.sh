@@ -5,7 +5,7 @@ echo "Installing Emacs"
 
 # Essential building stuff
 sudo apt-get $APT_INSTALL_ARGS install build-essential
-sudo apt-get build-dep emacs$(shell echo $EMACS_VERSION | cut -d"." -f 1)
+sudo apt-get build-dep emacs$(echo $EMACS_VERSION | cut -d"." -f 1)
 
 wget http://ftp.gnu.org/gnu/emacs/emacs-$EMACS_VERSION.tar.xz
 tar -xf emacs-$EMACS_VERSION.tar.*
@@ -21,7 +21,7 @@ sudo apt-get $APT_INSTALL_ARGS install ess
 # Download and use my default emacs config
 git clone https://github.com/davidpham87/emacs-data-analysis-config.git
 rm -r ~/.emacs.d
-mv -f my-emacs-config .emacs.d
+mv -f emacs-data-analysis-config .emacs.d
 mv ~/.emacs.d/.emacs-live.el ~/
 
-git clone git@github.com:shime/emacs-livedown.git ~/.emacs.d/packs/lang-code/lib/
+git clone https://github.com/shime/emacs-livedown.git ~/.emacs.d/packs/lang-code/lib/

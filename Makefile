@@ -1,8 +1,8 @@
- # New ubuntu machine configuration: This make file automate the installation
+# New ubuntu machine configuration: This make file automate the installation
 # of a machine where data analysis would be performed. Best when run while
 # in root
 
-clojure:
+clojure: java
 	sudo bash clojure/install.sh
 
 cron:
@@ -35,8 +35,14 @@ markdown_livedown:
 nodejs:
 	sudo bash nodejs/install.sh
 
+python:
+	sudo bash python/install.sh
+
 r-cran:
 	sudo bash r-cran/install.sh
+
+ruby:
+	sudo bash ruby/install.sh
 
 swap_file:
 	sudo bash swap_file/install.sh

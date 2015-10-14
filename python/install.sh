@@ -1,11 +1,13 @@
 # Python installation for data analysis or coding in general
 
+sudo apt-get remove python-pip
+sudo easy_install pip
+
 # pandas numpy scipy for python3
 sudo apt-get install python-numpy python-scipy python-matplotlib ipython \
-     ipython-notebook python-pandas python-sympy python-nose
-
-sudo apt-get install python3-numpy python3-scipy python3-matplotlib \
-     python3-pandas python3-sympy python3-nose
+    ipython-notebook python-pandas python-sympy python-nose \
+    python3-numpy python3-scipy python3-matplotlib \
+    python3-pandas python3-nose ipython3
 
 # Scikit for python 2 and 3
 sudo apt-get install build-essential python-dev python-setuptools \

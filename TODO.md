@@ -11,3 +11,12 @@ Understand how it works.
 
 + free memory: `sudo sysctl -w vm.drop_caches=3`
 + create_makefile.py: Check if folder contains install.sh
+
+# Useful links for web development
+
+[Browsersync](http://www.browsersync.io/) seems cool:
+
+```bash
+npm install -g browser-sync
+```
+

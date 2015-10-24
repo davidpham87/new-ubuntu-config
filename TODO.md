@@ -20,3 +20,7 @@ Understand how it works.
 npm install -g browser-sync
 ```
 
+# Emacs 
+
+* Install the adobe fonts before installing emacs.
+* Livedown package to upload.

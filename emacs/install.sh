@@ -19,9 +19,9 @@ echo 'export TERM=xterm-256color' >> ~/.bashrc
 sudo apt-get $APT_INSTALL_ARGS install ess
 
 # Download and use my default emacs config
-git clone https://github.com/davidpham87/emacs-data-analysis-config.git
+git clone https://github.com/davidpham87/emacs-data-analysis-config.git ~/
 rm -r ~/.emacs.d
-mv -f emacs-data-analysis-config .emacs.d
+mv -f ~/emacs-data-analysis-config ~/.emacs.d
 mv ~/.emacs.d/.emacs-live.el ~/
 
 git clone https://github.com/shime/emacs-livedown.git ~/.emacs.d/packs/lang-code/lib/

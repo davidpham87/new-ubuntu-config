@@ -2,7 +2,7 @@
 # of a machine where data analysis would be performed. Best when run while
 # in root
 
-clojure: java
+clojure:
 	sudo bash clojure/install.sh
 
 cron:
@@ -17,14 +17,17 @@ finger:
 firewall:
 	sudo bash firewall/install.sh
 
+fonts:
+	sudo bash fonts/install.sh
+
 git:
 	sudo bash git/install.sh
 
 google_drive:
 	sudo bash google_drive/install.sh
 
-install-make:
-	sudo bash install-make/install.sh
+install_make:
+	sudo bash install_make/install.sh
 
 java:
 	sudo bash java/install.sh
@@ -38,8 +41,8 @@ nodejs:
 python:
 	sudo bash python/install.sh
 
-r-cran:
-	sudo bash r-cran/install.sh
+r_cran:
+	sudo bash r_cran/install.sh
 
 ruby:
 	sudo bash ruby/install.sh

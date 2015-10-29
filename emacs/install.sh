@@ -12,7 +12,7 @@ tar -xf emacs-$EMACS_VERSION.tar.*
 
 cd emacs-$EMACS_VERSION && ./configure && make && sudo make install
 
-echo 'export EDITOR="emacs"' >> ~/.bashrc
+echo 'export EDITOR="emacs -Q"' >> ~/.bashrc
 echo 'export TERM=xterm-256color' >> ~/.bashrc
 
 # Install emacs speaks statistics

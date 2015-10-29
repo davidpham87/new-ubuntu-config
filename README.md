@@ -31,8 +31,9 @@ As a bonus, you'll get the following bonus:
 
 ### Nothing fancy
 
-This has no intention to bring something new, it is much for educational purpose
-and a good memo for myself or anyone who encounter the same challenge as me.
+This has no intention to bring something new, it is much for educational
+purpose and a good memo for myself or anyone who encounter the same challenge
+as me.
 
 ## Notes
 

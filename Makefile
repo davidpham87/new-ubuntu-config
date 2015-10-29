@@ -2,13 +2,15 @@
 # of a machine where data analysis would be performed. Best when run while
 # in root
 
-clojure:
+.PHONY: clojure cron emacs finger firewall fonts git google_drive install_make java markdown_livedown nodejs python r_cran ruby swap_file timezone
+
+clojure: java
 	sudo bash clojure/install.sh
 
 cron:
 	sudo bash cron/install.sh
 
-emacs:
+emacs: fonts
 	sudo bash emacs/install.sh
 
 finger:

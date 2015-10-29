@@ -1,9 +1,11 @@
 # new-ubuntu-config
-Bash and makefiles for ubuntu new configurations (server and desktop)
+
+Bash and makefiles for ubuntu new configurations (server and desktop). 
 
 ## Ubuntu Server Configuration
 
-A standard configuration makefiles for your server (or desktop).
+A standard configuration makefiles for your server (or desktop). I suppose you
+probably have root access.
 
 [Digital ocean](https://www.digitalocean.com/?refcode=b86bf62163aa) provides
 cheap cloud servers (you can start as low as 5$ per month).

@@ -12,10 +12,20 @@ MAKEFILE_HEADER = """# New ubuntu machine configuration: This make file automate
 MAKEFILE_PATH =  'Makefile'
 makefile = []
 
+def get_dependencies(s):
+    require = os.path.join(s, 'require.txt')
+    if os.path.exists(require):
+        with open(require, 'r') as f:
+            return ' ' + f.read().strip()
+    return ''
+
 folders = sorted(next(os.walk(os.getcwd()))[1])
-instruction = "{folder}:\n\tsudo bash {folder}/install.sh\n"
-instructions = '\n'.join([instruction.format(folder=folder) for folder in
-                          folders if not folder.startswith('.')])
+instruction = "{folder}:{deps}\n\tsudo bash {folder}/install.sh\n"
+instructions = \
+    '\n'.join([instruction.format(folder=folder, deps=get_dependencies(folder))
+               for folder in
+               folders if not folder.startswith('.')])
+
 phony = ".PHONY: " + ' '.join([f for f in folders if not f.startswith('.')])
 makefile = '\n\n'.join([MAKEFILE_HEADER,  phony, instructions])
 

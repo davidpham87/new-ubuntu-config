@@ -10,7 +10,7 @@ clojure: java
 cron:
 	sudo bash cron/install.sh
 
-emacs: fonts
+emacs: fonts markdown_livedown
 	sudo bash emacs/install.sh
 
 finger:
@@ -34,7 +34,7 @@ install_make:
 java:
 	sudo bash java/install.sh
 
-markdown_livedown:
+markdown_livedown: nodejs
 	sudo bash markdown_livedown/install.sh
 
 nodejs:

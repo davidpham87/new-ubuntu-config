@@ -1,7 +1,10 @@
 # Python installation for data analysis or coding in general
 
 sudo apt-get remove python-pip
-sudo easy_install pip
+wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+sudo python get-pip.py
+sudo python3 get-pip.py
+rm get-pip.py
 
 # pandas numpy scipy for python3
 sudo apt-get install python-numpy python-scipy python-matplotlib \
@@ -25,12 +28,15 @@ sudo update-alternatives --set liblapack.so.3 \
      /usr/lib/atlas-base/atlas/liblapack.so.3
 
 sudo pip install --install-option="--prefix=" -U scikit-learn
+sudo pip3 install --install-option="--prefix=" -U scikit-learn
 
 # Install jinja2, sphinx (documentation), pyzmq, pygments, tornado, nose
 sudo pip install -U ipython[all]
+sudo pip3 install -U ipython[all]
 
 # jupyiter for interactive notebooks
 sudo pip install -U jupyter
+sudo ipython3 kernel install # add python3 kernel
 
 # jedi for emacs autocompletion
-sudo pip install -U jedi
+sudo pip3 install -U jedi

@@ -1,10 +1,12 @@
 #!/bin/bash
 
 # Create the directory if it does not exist
-[ -d /usr/share/fonts/opentype ] || sudo mkdir /usr/share/fonts/opentype
+[ -d ~/.fonts ] || sudo mkdir ~/.fonts
 
-# Clone the repository
-sudo git clone https://github.com/adobe-fonts/source-code-pro.git /usr/share/fonts/opentype/scp
+wget https://github.com/adobe-fonts/source-code-pro/archive/2.010R-ro/1.030R-it.tar.gz
+sudo tar xvzf 1.030R-it.tar.gz -C ~/.fonts/
+rm 1.030R-it.tar.gz
 
 # Cache the result
-sudo fc-cache -f -v
+# No sudo
+fc-cache -f -v

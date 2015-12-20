@@ -9,4 +9,4 @@ sudo apt-get -y --force-yes install r-base-core
 sudo apt-get -y --force-yes install r-cran-*
 sudo apt-get -y --force-yes install libcurl4-openssl-dev libxml2-dev # curl  and xml package
 
-sudo Rscript r-cran/packages.R
+sudo Rscript r_cran/packages.R

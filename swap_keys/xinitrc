@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# down and right to control
+# Trick to get it work with the modifiers
+xmodmap -e "keycode 114 = Control_L Right"
+xmodmap -e "keycode 116 = Control_L Down"
+
+# Switch the modifiers keys
+xmodmap -e "add control = Down"
+xmodmap -e "add control = Right"

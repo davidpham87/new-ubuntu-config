@@ -48,10 +48,11 @@ install.packages(c('scrarpeR', 'XML')) # Web scrapping
 
 install.packages('yaml') # rmarkdown
 
+install.packages('devtools')
 require(devtools)
 
 install.packages('shiny') # shiny apps <-> simple webapps
-install.packages('shinythemes')
+# install.packages('shinythemes')
 devtools::install_github("rstudio/shinyapps")
 
 install.packages('quantmod') # quantmod: Quantitative Financial Modelling

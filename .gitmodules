@@ -1,0 +1,3 @@
+[submodule "swap_keys/hid-apple-patched"]
+	path = swap_keys/hid-apple-patched
+	url = https://github.com/free5lot/hid-apple-patched

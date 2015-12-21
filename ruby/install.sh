@@ -6,10 +6,10 @@ tar -xzvf ruby-install-$VERSION.tar.gz
 cd ruby-install-$VERSION/
 sudo make install
 
-sudo ruby-install ruby
+sudo ruby-install ruby 2.3.4
 sudo gem install html2haml
 sudo gem install middleman
 
 # clean
-rm -r ruby-install-$VERSION(
+rm -r ruby-install-$VERSION/
 rm ruby-install-$VERSION.tar.gz

@@ -7,6 +7,6 @@ sudo apt-get update && sudo apt-get upgrade
 
 sudo apt-get -y --force-yes install r-base-core
 sudo apt-get -y --force-yes install r-cran-*
-sudo apt-get -y --force-yes install libcurl4-openssl-dev libxml2-dev # curl  and xml package
+sudo apt-get -y --force-yes install libcurl4-openssl-dev libxml2-dev libssl-dev # curl  and xml package
 
 sudo Rscript r_cran/packages.R

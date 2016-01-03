@@ -14,6 +14,7 @@ cd emacs-$EMACS_VERSION && ./configure && make && sudo make install
 
 echo 'export EDITOR="emacs -Q"' >> ~/.bashrc
 echo 'export TERM=xterm-256color' >> ~/.bashrc
+echo 'export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\e[1;34m\]\u@\h\[\e[m\]: \[\e[1;31m\]\w\[\e[m\]\n\$ "' >> ~/.bashrc
 
 # Clean
 rm -r emacs-$EMACS_VERSION

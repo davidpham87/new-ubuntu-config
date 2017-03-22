@@ -1,10 +1,10 @@
-EMACS_VERSION=24.5
-APT_INSTALL_ARGS=-y --force-yes
+EMACS_VERSION=25.1
+APT_INSTALL_ARGS=-y
 
 echo "Installing Emacs"
 
 # Essential building stuff
-sudo apt-get $APT_INSTALL_ARGS install build-essential
+sudo apt-get $APT_INSTALL_ARGS install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev
 sudo apt-get build-dep emacs$(echo $EMACS_VERSION | cut -d"." -f 1)
 
 wget http://ftp.gnu.org/gnu/emacs/emacs-$EMACS_VERSION.tar.xz
@@ -25,5 +25,5 @@ sudo apt-get $APT_INSTALL_ARGS install ess
 
 # Download and use my default emacs config
 rm -r ~/.emacs.d
-git clone --recursive https://github.com/davidpham87/emacs-data-analysis-config.git ~/.emacs.d
+git clone https://github.com/davidpham87/emacs-data-analysis-config.git ~/.emacs.d
 mv ~/.emacs.d/.emacs-live.el ~/

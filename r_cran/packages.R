@@ -53,7 +53,7 @@ require(devtools)
 
 install.packages('shiny') # shiny apps <-> simple webapps
 # install.packages('shinythemes')
-devtools::install_github("rstudio/shinyapps")
+# devtools::install_github("rstudio/shinyapps")
 
 install.packages('quantmod') # quantmod: Quantitative Financial Modelling
                              # Framework

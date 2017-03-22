@@ -1,22 +1,23 @@
 # Python installation for data analysis or coding in general
 
 sudo apt-get remove python-pip
-wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo python3 get-pip.py
 rm get-pip.py
 
 # pandas numpy scipy for python3
-sudo apt-get -y --force-yes install python-numpy python-scipy \
+sudo apt-get -y install python-numpy python-scipy \
+     libatlas3-base
      python-matplotlib \
      python-pandas python-sympy python-nose \
      python3-numpy python3-scipy python3-matplotlib \
      python3-pandas python3-nose
 
 # Scikit for python 2 and 3
-sudo apt-get -y --force-yes install build-essential python-dev  \
+sudo apt-get -y install build-essential python-dev  \
      python-setuptools \
-     libatlas-dev libatlas3gf-base
+     libatlas-dev libatlas3-base
 
 sudo apt-get -y --force-yes install build-essential python3-dev \
      python3-setuptools \

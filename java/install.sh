@@ -1,4 +1,2 @@
 echo "Installing Java"
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get -y --force-yes install oracle-java8-installer
+sudo apt-get -y install openjdk-14-jre-headless

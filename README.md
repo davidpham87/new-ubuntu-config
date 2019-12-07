@@ -39,6 +39,10 @@ as me.
 
 + Timezone is set as Zürich (GMT+1).
 
+## Remote Gui Desktop
+
+https://www.cyberciti.biz/faq/install-and-configure-tigervnc-server-on-ubuntu-18-04/
+
 # License
 
 Unlicense. See [here](http://choosealicense.com/licenses/) what it means.

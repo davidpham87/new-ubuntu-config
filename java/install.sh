@@ -1,2 +1,2 @@
 echo "Installing Java"
-sudo apt-get install openjdk-8-jre
+sudo apt-get -y install openjdk-14-jre-headless

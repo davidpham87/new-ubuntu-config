@@ -4,11 +4,11 @@ VERSION="0.5.0"
 wget -O ruby-install-$VERSION.tar.gz https://github.com/postmodern/ruby-install/archive/v$VERSION.tar.gz
 tar -xzvf ruby-install-$VERSION.tar.gz
 cd ruby-install-$VERSION/
-sudo make install
+make install
 
-sudo ruby-install ruby 2.2.2
-sudo gem install html2haml
-sudo gem install middleman
+ruby-install ruby 2.2.2
+gem install html2haml
+gem install middleman
 
 # clean
 rm -r ruby-install-$VERSION/

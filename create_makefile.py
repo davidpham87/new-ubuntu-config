@@ -24,7 +24,7 @@ def get_dependencies(s):
     return ''
 
 folders = sorted(next(os.walk(os.getcwd()))[1])
-instruction = "{folder}:{deps}\n\tsudo bash {folder}/install.sh\n"
+instruction = "{folder}:{deps}\n\tbash {folder}/install.sh\n"
 instructions = \
     '\n'.join([instruction.format(folder=folder, deps=get_dependencies(folder))
                for folder in

@@ -2,7 +2,10 @@
 # of a machine where data analysis would be performed.Best when run while
 # in root
 
-.PHONY: clojure emacs finger firewall fonts git google_drive install_make java latex markdown_livedown nodejs python r_cran ruby swap_file swap_keys timezone
+.PHONY: babashka clojure emacs finger firewall fonts git google_drive install_make java latex markdown_livedown nodejs python r_cran ruby swap_file swap_keys timezone
+
+babashka:
+	bash babashka/install.sh
 
 clojure: java
 	bash clojure/install.sh

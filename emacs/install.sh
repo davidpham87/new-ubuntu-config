@@ -1,10 +1,7 @@
-EMACS_VERSION=26.3
-APT_INSTALL_ARGS=-y
-
 echo "Installing Emacs"
 
 # Essential building stuff
-sudo apt $APT_INSTALL_ARGS install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev
+sudo apt -y install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev
 
 # for pdf, see https://github.com/politza/pdf-tools
 sudo apt -y install zlib1g-dev libpoppler-glib-dev libpoppler-private-dev imagemagick

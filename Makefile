@@ -2,61 +2,61 @@
 # of a machine where data analysis would be performed.Best when run while
 # in root
 
-.PHONY: babashka clojure emacs finger firewall fonts git google_drive install_make java latex markdown_livedown nodejs python r_cran ruby swap_file swap_keys timezone
+.PHONY: clj-tools clojure emacs finger firewall fonts git google_drive install_make java latex markdown_livedown nodejs python r_cran ruby swap_file swap_keys timezone
 
-babashka:
-	bash babashka/install.sh
+clj-tools:
+	sudo bash clj-tools/install.sh
 
 clojure: java
-	bash clojure/install.sh
+	sudo bash clojure/install.sh
 
 emacs: fonts markdown_livedown
-	bash emacs/install.sh
+	sudo bash emacs/install.sh
 
 finger:
-	bash finger/install.sh
+	sudo bash finger/install.sh
 
 firewall:
-	bash firewall/install.sh
+	sudo bash firewall/install.sh
 
 fonts:
-	bash fonts/install.sh
+	sudo bash fonts/install.sh
 
 git:
-	bash git/install.sh
+	sudo bash git/install.sh
 
 google_drive:
-	bash google_drive/install.sh
+	sudo bash google_drive/install.sh
 
 install_make:
-	bash install_make/install.sh
+	sudo bash install_make/install.sh
 
 java:
-	bash java/install.sh
+	sudo bash java/install.sh
 
 latex:
-	bash latex/install.sh
+	sudo bash latex/install.sh
 
 markdown_livedown: nodejs
-	bash markdown_livedown/install.sh
+	sudo bash markdown_livedown/install.sh
 
 nodejs:
-	bash nodejs/install.sh
+	sudo bash nodejs/install.sh
 
 python:
-	bash python/install.sh
+	sudo bash python/install.sh
 
 r_cran:
-	bash r_cran/install.sh
+	sudo bash r_cran/install.sh
 
 ruby:
-	bash ruby/install.sh
+	sudo bash ruby/install.sh
 
 swap_file:
-	bash swap_file/install.sh
+	sudo bash swap_file/install.sh
 
 swap_keys:
-	bash swap_keys/install.sh
+	sudo bash swap_keys/install.sh
 
 timezone:
-	bash timezone/install.sh
+	sudo bash timezone/install.sh

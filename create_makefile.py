@@ -11,7 +11,8 @@ import os
 MAKEFILE_HEADER = (
     "# New ubuntu machine configuration: This make file automate the " +
     "installation\n# of a machine where data analysis would be performed." +
-    "Best when run while\n# in root""")
+    "Best when run while\n# in root"
+)
 
 MAKEFILE_PATH =  'Makefile'
 makefile = []

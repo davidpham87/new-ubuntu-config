@@ -14,7 +14,8 @@ sudo apt install libxpm-dev libgif-dev libjpeg-dev libpng-dev libtiff-dev \
 sudo add-apt-repository ppa:ubuntu-toolchain-r/ppa
 sudo apt install gcc-10 g++-10 libgccjit0 libgccjit-10-dev libjansson4 \
      libjansson-dev
-git clone git://git.sv.gnu.org/emacs.git
+git clone git://git.sv.gnu.org/emacs.git emacs-source
+cd emacs-source
 git checkout feature/native-comp
 export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
 ./autogen.sh

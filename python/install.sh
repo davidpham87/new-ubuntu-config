@@ -40,3 +40,6 @@ sudo pip3 install -U jedi
 
 # checkers for emacs
 sudo apt-get install pyflakes
+
+# lsp mode
+sudo npm install -g pyright

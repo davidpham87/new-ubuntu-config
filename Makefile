@@ -2,15 +2,18 @@
 # of a machine where data analysis would be performed.Best when run while
 # in root
 
-.PHONY: clj-tools clojure emacs finger firewall fonts git google_drive install_make java latex nodejs python r_cran ruby swap_file swap_keys timezone
+.PHONY: clj-tools clojure clojure-lsp emacs finger firewall fonts git google_drive install_make java latex markdown_livedown nodejs python r_cran ruby swap_file swap_keys timezone
 
-clj-tools:
+clj-tools: clojure-lsp
 	bash clj-tools/install.sh
 
 clojure: java
 	bash clojure/install.sh
 
-emacs: fonts markdown_livedown
+clojure-lsp:
+	bash clojure-lsp/install.sh
+
+emacs: fonts
 	bash emacs/install.sh
 
 finger:
@@ -37,10 +40,13 @@ java:
 latex:
 	bash latex/install.sh
 
+markdown_livedown: nodejs
+	bash markdown_livedown/install.sh
+
 nodejs:
 	bash nodejs/install.sh
 
-python:
+python: nodejs
 	bash python/install.sh
 
 r_cran:

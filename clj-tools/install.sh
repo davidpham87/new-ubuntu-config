@@ -15,4 +15,4 @@ curl -s https://raw.githubusercontent.com/borkdude/jet/master/install> jet-insta
 bash jet-install
 rm jet-install
 
-echo "Install grasp"
+echo "Install clojure-lsp"

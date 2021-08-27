@@ -7,7 +7,6 @@ This link shows all the desired tricks as well:
 
 https://help.ubuntu.com/community/AppleKeyboard#Change%20Function%20Key%20behavior
 
+# MX Keys Mac
 
-
-
-
+Some keys are interverted and the file allows to swap the ALT and Command keys.

@@ -16,10 +16,9 @@ sudo apt install gcc-10 g++-10 libgccjit0 libgccjit-10-dev libjansson4 \
      libjansson-dev
 git clone git://git.sv.gnu.org/emacs.git emacs-source
 cd emacs-source
-git checkout feature/native-comp
 export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
 ./autogen.sh
-./configure --with-native-compilation --with-json CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"
+./configure --with-native-compilation --with-svg --with-json CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"
 make -j16 NATIVE_FULL_AOT=1
 make install
 

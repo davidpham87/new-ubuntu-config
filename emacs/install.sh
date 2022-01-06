@@ -16,15 +16,11 @@ sudo apt install gcc-10 g++-10 libgccjit0 libgccjit-10-dev libjansson4 \
      libjansson-dev
 git clone git://git.sv.gnu.org/emacs.git emacs-source
 cd emacs-source
-git checkout feature/native-comp
 export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
 ./autogen.sh
-./configure --with-native-compilation --with-json CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"
+./configure --with-json --with-tiff=ifavailable --with-svg --with-native-compilation  CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"
 make -j16 NATIVE_FULL_AOT=1
-make install
-
-# sudo apt -y install snapd
-# sudo snap install emacs --classic
+sudo make install
 
 echo 'export EDITOR="emacs -Q"' >> ~/.bashrc
 echo 'export TERM=xterm-256color' >> ~/.bashrc

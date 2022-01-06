@@ -1,10 +1,10 @@
 echo "Installing Clojure and Lein"
 sudo apt install curl
 
-curl -O https://download.clojure.org/install/linux-install-1.10.2.774.sh
-chmod +x linux-install-1.10.2.774.sh
-sudo ./linux-install-1.10.2.774.sh
-rm linux-install-1.10.2.774.sh
+curl -O https://download.clojure.org/install/linux-install-1.10.3.933.sh
+chmod +x linux-install-1.10.3.933.sh
+sudo ./linux-install-1.10.3.933.sh
+rm linux-install-1.10.3.933.sh
 
 cd ~/
 mkdir -p ~/bin

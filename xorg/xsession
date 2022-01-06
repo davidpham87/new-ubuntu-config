@@ -1,0 +1,7 @@
+# emacs -f exwm-enable
+startxfce4
+sleep 2 && xrandr --dpi 218
+
+# nvidia-settings --load-config-only & . /etc/X11/xinit/xinitrc
+# exec xrandr --dpi 218
+# exec startxfce4

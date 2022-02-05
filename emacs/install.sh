@@ -24,7 +24,7 @@ export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
 ./autogen.sh
 ./configure --with-json \
             --with-tiff=ifavailable \
-            --with-svg \
+            --with-rsvg \
             --with-pgtk \
             --with-native-compilation \
             CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"

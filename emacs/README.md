@@ -20,17 +20,16 @@ sudo apt -y install \
      libgnutls28-dev libwebkit2gtk-4.0-dev libwebkit2gtk-4.0-37 \
      libxpm-dev libgif-dev libjpeg-dev libpng-dev libtiff-dev \
      libx11-dev libncurses5-dev automake autoconf texinfo libgtk2.0-dev \
-     gcc-10 g++-10 libgccjit0 libgccjit-10-dev libjansson4 \
+     gcc-11 g++-11 libgccjit0 libgccjit-11-dev libjansson4 \
      libjansson-dev
 
 git clone git://git.sv.gnu.org/emacs.git emacs-source
 cd emacs-source
-export CC=/usr/bin/gcc-10 CXX=/usr/bin/gcc-10
+export CC=/usr/bin/gcc-11 CXX=/usr/bin/gcc-11
 ./autogen.sh
 ./configure --with-json \
             --with-tiff=ifavailable \
             --with-svg \
-            --with-pgtk \
             --with-native-compilation \
             CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"
 

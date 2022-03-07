@@ -16,7 +16,7 @@ sudo apt -y install \
      libxpm-dev libgif-dev libjpeg-dev libpng-dev libtiff-dev \
      libx11-dev libncurses5-dev automake autoconf texinfo libgtk2.0-dev \
      gcc-11 g++-11 libgccjit0 libgccjit-11-dev libjansson4 \
-     libjansson-dev
+     libjansson-dev libwebp-dev librsvg2-dev
 
 git clone git://git.sv.gnu.org/emacs.git emacs-source
 cd emacs-source
@@ -25,6 +25,7 @@ export CC=/usr/bin/gcc-11 CXX=/usr/bin/gcc-11
 ./configure --with-json \
             --with-tiff=ifavailable \
             --with-rsvg \
+            --with-webp \
             --with-native-compilation \
             CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"
 

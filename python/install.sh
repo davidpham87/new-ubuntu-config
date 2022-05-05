@@ -12,8 +12,7 @@ sudo apt -y install \
      python3-numpy \
      python3-scipy \
      python3-matplotlib \
-     python3-pandas python3-nose \
-     pyflakes
+     python3-pandas python3-nose
 
 
 # Set a different blas and lapack

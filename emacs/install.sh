@@ -27,6 +27,7 @@ export CC=/usr/bin/gcc-11 CXX=/usr/bin/gcc-11
             --with-rsvg \
             --with-webp \
             --with-native-compilation \
+            --with-pgtk \
             CFLAGS="-O3 -mtune=native -march=native -fomit-frame-pointer"
 
 make -j16 NATIVE_FULL_AOT=1
